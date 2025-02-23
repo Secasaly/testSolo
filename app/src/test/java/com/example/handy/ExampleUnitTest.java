@@ -1,4 +1,4 @@
-package com.example.testsolo;
+package com.example.handy;
 
 import org.junit.Test;
 

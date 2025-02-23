@@ -1,5 +1,3 @@
 <resources>
-    <string name="app_name">testSolo</string>
-    <string name="enter_you_data">Enter you data</string>
-    <string name="username">Username</string>
+    <string name="app_name">handy</string>
 </resources>

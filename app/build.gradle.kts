@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.testsolo"
+    namespace = "com.example.handy"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.testsolo"
+        applicationId = "com.example.handy"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
