@@ -28,7 +28,7 @@ public class TaskHome extends AppCompatActivity {
         database = new dataBase(this);
 
         btnAddTask.setOnClickListener(v -> {
-            Intent intent = new Intent(TaskHome.this, AddEditTaskActivity.class);
+            Intent intent = new Intent(TaskHome.this, TaskActions.class);
             startActivity(intent);
         });
 

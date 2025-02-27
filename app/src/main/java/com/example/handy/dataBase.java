@@ -36,12 +36,14 @@ public class dataBase extends SQLiteOpenHelper {
                 users_column_username + " TEXT UNIQUE, " +
                 users_column_password + " TEXT, " +
                 users_column_email + " TEXT UNIQUE);";
+
         String createTaskTable = "CREATE TABLE " + tasks_table + " (" +
                 tasks_column_id + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 tasks_column_title + " TEXT, " +
                 tasks_column_desc + " TEXT, " +
                 tasks_column_due + " TEXT, " +
                 tasks_column_status + " TEXT);";
+
         db.execSQL(createUserTable);
         db.execSQL(createTaskTable);
     }
@@ -104,10 +106,10 @@ public class dataBase extends SQLiteOpenHelper {
         return rows > 0;
     }
 
- /*   public boolean deleteTask(int id) {
+    public boolean deleteTask(int id) {
         SQLiteDatabase db = this.getWritableDatabase();
         int rows = db.delete(tasks_table, tasks_column_id + " = ?", new String[]{String.valueOf(id)});
         db.close();
         return rows > 0;
-    }*/
+    }
 }

@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <!--//<uses-permission android:name="android.permission.INTERNET" />-->
 
     <application
         android:allowBackup="true"
@@ -36,7 +36,7 @@
 
         <!-- Add/Edit Task Activity (added to fix the add task button) -->
         <activity
-            android:name=".AddEditTaskActivity"
+            android:name=".TaskActions"
             android:exported="true" />
 
         <!-- Main Activity as Launcher -->
@@ -51,7 +51,7 @@
 
         <!-- Reminder Receiver for notifications and boot handling -->
         <receiver
-            android:name=".ReminderReceiver"
+            android:name=".MyReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

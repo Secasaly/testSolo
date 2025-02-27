@@ -27,8 +27,8 @@
         android:text="Status" />
 
     <Button
-        android:id="@+id/edtTask"
-        android:layout_width="130dp"
+        android:id="@+id/btnDeleteTask"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit" />
+        android:text="Delete" />
 </LinearLayout>
